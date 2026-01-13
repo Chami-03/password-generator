@@ -1,0 +1,166 @@
+/* --- Reset & base --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    background: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* --- Container & card --- */
+.app-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.card {
+    background: #fff;
+    padding: 50px 40px;
+    border-radius: 20px;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.1);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 35px 70px rgba(0,0,0,0.12);
+}
+
+h1 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+/* --- Form --- */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    color: #555;
+    font-weight: 500;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+input[type="number"]:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 10px rgba(76, 175, 80, 0.2);
+}
+
+.options label {
+    font-weight: normal;
+    margin-bottom: 12px;
+}
+
+/* --- Button --- */
+button {
+    padding: 14px 20px;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.generate-btn {
+    background: linear-gradient(135deg, #4CAF50, #66bb6a);
+    color: #fff;
+    width: 100%;
+}
+
+.generate-btn:hover {
+    background: linear-gradient(135deg, #43a047, #57a05a);
+    transform: translateY(-2px);
+}
+
+/* --- Result --- */
+.result {
+    margin-top: 25px;
+    transition: opacity 0.3s ease;
+}
+
+.password-box {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.password-box input[type="text"] {
+    flex: 1;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: box-shadow 0.2s ease;
+}
+
+.password-box input[type="text"]:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.2);
+}
+
+.password-box button {
+    width: 90px;
+    background: #2196F3;
+    color: #fff;
+}
+
+.password-box button:hover {
+    background: #1976d2;
+    transform: translateY(-2px);
+}
+
+#strengthText {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Strength colors */
+.weak { color: #f44336; }
+.medium { color: #ff9800; }
+.strong { color: #4CAF50; }
+.very-strong { color: #2196F3; }
+
+/* --- Responsive --- */
+@media(max-width: 600px) {
+    .card {
+        padding: 40px 25px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+}
