@@ -34,6 +34,7 @@ def generate_password(min_length, numbers=True, special_characters=True):
             meets_criteria = has_number
         if special_characters:
             meets_criteria = meets_criteria and has_special
+            
     return pwd
 
 @app.route("/", methods=["GET", "POST"])
