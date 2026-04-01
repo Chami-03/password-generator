@@ -122,5 +122,3 @@ Connecting frontend with backend
 
 Chamikara Wijerathne
 
-
-
